@@ -1,0 +1,18 @@
+function $(vArg){
+   switch(vArg[0]){
+      case "#" : //id
+        return document.getElementById(vArg.substring(1));
+        break;
+      case "." : //className
+        return elementsByClassName(document,vArg.substring(1));
+        break;
+      default : 
+        var str = vArg.substring(0,5);
+        if(str == "name="){ //name
+           return document.getElementsByName(vArg.substring(5));
+        }else{ //tagName
+           return document.getElementsByTagName(vArg);
+         }
+         break;
+        }
+   }
