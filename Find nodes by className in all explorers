@@ -1,0 +1,9 @@
+function elementsByClassName(parrent,class){
+  var nodes = parents.getElementsByTagName('*');
+  var result = [];//用来记录符合条件的元素节点
+  for(var i = 0;i < nodes.length;i++){
+    if(nodes[i].className == classStr){
+      result.push(nodes[i]);
+    }
+  }return result;
+}
