@@ -1,0 +1,6 @@
+function getStyle(elem,attr){
+  return elem.currentStyle?elem.currentStyle[attr].getComputedStyle(elem)[attr];
+}
+//IE:nodes.currentStyle[attr]
+//firefox、chome、safari:getComputedStyle(elem)[attr]
+//alert(getStyle(oDiv,"width"));
