@@ -1,0 +1,11 @@
+function removeSpaceNode(nodes){
+  var result = [];//存放不是空白节点的
+  for(var i = 0;i<nodes.length;i++){
+  //判断是否是空白节点
+    if(node[i].nodeType == 3&&/^\s+$/.test(node[i].nodeValue)){//^\s+$/.test()识别出空白节点
+      continue;
+    }
+    result.push(nodes[i]);
+  }
+//var nodes = removeSpaceNode(oDiv.childNodes);
+//alert(nodes.length);
